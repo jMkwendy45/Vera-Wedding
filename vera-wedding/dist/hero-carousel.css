@@ -1,0 +1,8 @@
+.hero-image > img {
+  display: block;
+  transition: opacity 700ms ease;
+}
+
+.hero-image.is-changing > img {
+  opacity: 0;
+}

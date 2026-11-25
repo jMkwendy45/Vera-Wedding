@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="440" viewBox="0 0 320 440">
+  <defs>
+    <radialGradient id="roseOuter" cx="38%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#fff4dd"/>
+      <stop offset="42%" stop-color="#ebd09e"/>
+      <stop offset="78%" stop-color="#bf975b"/>
+      <stop offset="100%" stop-color="#7c5b2c"/>
+    </radialGradient>
+    <radialGradient id="roseMid" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#f7e3be"/>
+      <stop offset="52%" stop-color="#d4ae72"/>
+      <stop offset="100%" stop-color="#6e4e22"/>
+    </radialGradient>
+    <radialGradient id="roseCore" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fff0cf"/>
+      <stop offset="48%" stop-color="#c39857"/>
+      <stop offset="100%" stop-color="#4e3413"/>
+    </radialGradient>
+    <linearGradient id="leafGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4e0b9"/>
+      <stop offset="48%" stop-color="#c9a469"/>
+      <stop offset="100%" stop-color="#76582c"/>
+    </linearGradient>
+    <linearGradient id="stemGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e7ca96"/>
+      <stop offset="50%" stop-color="#b48e53"/>
+      <stop offset="100%" stop-color="#876635"/>
+    </linearGradient>
+
+    <!-- Detailed embroidered champagne-gold rose -->
+    <g id="rose">
+      <!-- Outer ruffled petals -->
+      <path d="M0-17 C8-21 17-14 15-5 C22-1 20 11 11 13 C9 21 -3 22 -8 15 C-18 17 -22 6 -16-2 C-21-11 -11-20 0-17Z" fill="url(#roseOuter)" stroke="#684a1f" stroke-width="0.65"/>
+      <!-- Petal highlight edges -->
+      <path d="M-12-12 C-6-18 4-18 10-12 M14-4 C18 2 15 10 9 13 M-13 11 C-18 6 -18-2 -14-7" fill="none" stroke="#fff4dc" stroke-width="0.8" stroke-linecap="round" opacity="0.72"/>
+      <!-- Mid cupped petals -->
+      <path d="M-1-12 C6-14 13-8 10-1 C14 5 8 13 0 10 C-7 14 -14 7 -10 0 C-14-7 -7-14 -1-12Z" fill="url(#roseMid)" stroke="#5c3f18" stroke-width="0.6"/>
+      <!-- Inner petals -->
+      <path d="M0-7.5 C5-8.5 9-3.5 6.5 1.5 C8 6 2 9 -2.5 6.5 C-7.5 7.5 -9.5 1.5 -6-2.5 C-7.5-7 -3-8.5 0-7.5Z" fill="url(#roseCore)" stroke="#523714" stroke-width="0.55"/>
+      <!-- Center swirl -->
+      <path d="M-3.2-1.5 C-2-4.8 3.2-4.5 3.6-1 C4 2.4 0.5 4.2-2 2.8 C-4 1.6-3.2-1.2-0.5-1.4 C1.5-1.6 1.8 0.8 0.1 1.1" fill="none" stroke="#fff3d6" stroke-width="0.95" stroke-linecap="round"/>
+      <circle cx="0" cy="-0.4" r="1.2" fill="#5c3f18"/>
+    </g>
+
+    <!-- Half-open rosebud -->
+    <g id="bud">
+      <path d="M0 7 C-5 4 -6-4 0-9 C6-4 5 4 0 7Z" fill="url(#roseOuter)" stroke="#684a1f" stroke-width="0.55"/>
+      <path d="M0-7.5 C3-4 3 2 0 5 C-3 2 -3-4 0-7.5Z" fill="url(#roseCore)" stroke="#563a15" stroke-width="0.45"/>
+      <path d="M-4 5 Q0 8 4 5" fill="none" stroke="#9e7a43" stroke-width="1"/>
+      <path d="M-1-5 C1-3 1 0 0 2" fill="none" stroke="#fff3d6" stroke-width="0.7" opacity="0.8"/>
+    </g>
+
+    <!-- Pointed embroidered leaf -->
+    <g id="leaf">
+      <path d="M0 0 C-4.5-4 -5.5-11 0-17 C5.5-11 4.5-4 0 0Z" fill="url(#leafGold)" stroke="#5c421c" stroke-width="0.45"/>
+      <path d="M0-1 L0-14.5" fill="none" stroke="#fff2d4" stroke-width="0.45" opacity="0.7"/>
+    </g>
+
+    <!-- Leaf spray (3 leaves) -->
+    <g id="sprig">
+      <use href="#leaf" transform="scale(0.85)"/>
+      <use href="#leaf" transform="translate(-1,-2) rotate(-38) scale(0.68)"/>
+      <use href="#leaf" transform="translate(1,-2) rotate(38) scale(0.68)"/>
+    </g>
+
+    <!-- Tiny 5-petal gold floret -->
+    <g id="floret">
+      <circle cx="0" cy="-3.2" r="2.1" fill="#eed6a8"/>
+      <circle cx="3" cy="-1" r="2.1" fill="#e2c28b"/>
+      <circle cx="1.9" cy="2.6" r="2.1" fill="#d5b175"/>
+      <circle cx="-1.9" cy="2.6" r="2.1" fill="#e2c28b"/>
+      <circle cx="-3" cy="-1" r="2.1" fill="#f3dfb9"/>
+      <circle cx="0" cy="0" r="1.4" fill="#825f2d"/>
+    </g>
+
+    <!-- Single graceful ogee vine arch motif -->
+    <g id="arch-vine">
+      <!-- Primary sweeping S-vines forming delicate teardrop lattice -->
+      <path d="M160 0 C115 36 74 72 74 118 C74 168 118 196 160 220 C202 244 246 272 246 322 C246 368 205 404 160 440" fill="none" stroke="url(#stemGold)" stroke-width="1.35" stroke-linecap="round"/>
+      <path d="M160 0 C205 36 246 72 246 118 C246 168 202 196 160 220 C118 244 74 272 74 322 C74 368 115 404 160 440" fill="none" stroke="url(#stemGold)" stroke-width="1.35" stroke-linecap="round"/>
+      <!-- Delicate offshoot tendrils -->
+      <path d="M106 54 C84 44 64 52 54 68 M214 54 C236 44 256 52 266 68 M75 132 C52 142 38 164 42 184 M245 132 C268 142 282 164 278 184 M114 192 C92 204 78 220 76 238 M206 192 C228 204 242 220 244 238 M76 306 C50 296 36 278 36 258 M244 306 C270 296 284 278 284 258 M104 388 C82 396 62 388 52 372 M216 388 C238 396 258 388 268 372" fill="none" stroke="url(#stemGold)" stroke-width="0.95" stroke-linecap="round" opacity="0.88"/>
+      <!-- Outer connecting corner curls for seamless tiling -->
+      <path d="M0 110 C28 110 46 92 54 68 M320 110 C292 110 274 92 266 68 M0 330 C28 330 46 348 52 372 M320 330 C292 330 274 348 268 372" fill="none" stroke="url(#stemGold)" stroke-width="0.9" stroke-linecap="round" opacity="0.72"/>
+
+      <!-- Leaf sprigs hugging the vines -->
+      <use href="#sprig" transform="translate(132 22) rotate(-52) scale(0.95)"/>
+      <use href="#sprig" transform="translate(188 22) rotate(52) scale(0.95)"/>
+      <use href="#leaf" transform="translate(95 66) rotate(-120) scale(0.9)"/>
+      <use href="#leaf" transform="translate(225 66) rotate(120) scale(0.9)"/>
+      <use href="#sprig" transform="translate(75 94) rotate(-28) scale(0.85)"/>
+      <use href="#sprig" transform="translate(245 94) rotate(28) scale(0.85)"/>
+      <use href="#leaf" transform="translate(86 154) rotate(140) scale(0.9)"/>
+      <use href="#leaf" transform="translate(234 154) rotate(-140) scale(0.9)"/>
+      <use href="#sprig" transform="translate(124 196) rotate(-125) scale(0.9)"/>
+      <use href="#sprig" transform="translate(196 196) rotate(125) scale(0.9)"/>
+
+      <use href="#sprig" transform="translate(130 246) rotate(-55) scale(0.9)"/>
+      <use href="#sprig" transform="translate(190 246) rotate(55) scale(0.9)"/>
+      <use href="#leaf" transform="translate(84 282) rotate(-135) scale(0.9)"/>
+      <use href="#leaf" transform="translate(236 282) rotate(135) scale(0.9)"/>
+      <use href="#sprig" transform="translate(76 346) rotate(24) scale(0.88)"/>
+      <use href="#sprig" transform="translate(244 346) rotate(-24) scale(0.88)"/>
+      <use href="#leaf" transform="translate(106 392) rotate(118) scale(0.9)"/>
+      <use href="#leaf" transform="translate(214 392) rotate(-118) scale(0.9)"/>
+      <use href="#sprig" transform="translate(136 418) rotate(-130) scale(0.85)"/>
+      <use href="#sprig" transform="translate(184 418) rotate(130) scale(0.85)"/>
+
+      <!-- Outer edge leaves -->
+      <use href="#sprig" transform="translate(32 104) rotate(68) scale(0.82)"/>
+      <use href="#sprig" transform="translate(288 104) rotate(-68) scale(0.82)"/>
+      <use href="#sprig" transform="translate(38 264) rotate(-18) scale(0.78)"/>
+      <use href="#sprig" transform="translate(282 264) rotate(18) scale(0.78)"/>
+      <use href="#sprig" transform="translate(30 338) rotate(112) scale(0.82)"/>
+      <use href="#sprig" transform="translate(290 338) rotate(-112) scale(0.82)"/>
+
+      <!-- Focal embroidered roses along the arcs -->
+      <use href="#rose" transform="translate(160 0) scale(0.82)"/>
+      <use href="#rose" transform="translate(160 440) scale(0.82)"/>
+      <use href="#rose" transform="translate(82 114) scale(0.92)"/>
+      <use href="#rose" transform="translate(238 114) scale(0.92)"/>
+      <use href="#rose" transform="translate(160 220) scale(1.02)"/>
+      <use href="#rose" transform="translate(80 326) scale(0.92)"/>
+      <use href="#rose" transform="translate(240 326) scale(0.92)"/>
+      <!-- Secondary corner roses for rich edge-to-edge density -->
+      <use href="#rose" transform="translate(0 110) scale(0.72)"/>
+      <use href="#rose" transform="translate(320 110) scale(0.72)"/>
+      <use href="#rose" transform="translate(0 330) scale(0.72)"/>
+      <use href="#rose" transform="translate(320 330) scale(0.72)"/>
+
+      <!-- Delicate rosebuds and florets -->
+      <use href="#bud" transform="translate(56 64) rotate(-40) scale(0.85)"/>
+      <use href="#bud" transform="translate(264 64) rotate(40) scale(0.85)"/>
+      <use href="#bud" transform="translate(42 182) rotate(-150) scale(0.85)"/>
+      <use href="#bud" transform="translate(278 182) rotate(150) scale(0.85)"/>
+      <use href="#bud" transform="translate(54 374) rotate(-140) scale(0.85)"/>
+      <use href="#bud" transform="translate(266 374) rotate(140) scale(0.85)"/>
+      <use href="#floret" transform="translate(115 44) scale(0.9)"/>
+      <use href="#floret" transform="translate(205 44) scale(0.9)"/>
+      <use href="#floret" transform="translate(108 176) scale(0.85)"/>
+      <use href="#floret" transform="translate(212 176) scale(0.85)"/>
+      <use href="#floret" transform="translate(108 264) scale(0.85)"/>
+      <use href="#floret" transform="translate(212 264) scale(0.85)"/>
+      <use href="#floret" transform="translate(116 398) scale(0.9)"/>
+      <use href="#floret" transform="translate(204 398) scale(0.9)"/>
+      <use href="#floret" transform="translate(46 254) scale(0.78)"/>
+      <use href="#floret" transform="translate(274 254) scale(0.78)"/>
+
+      <!-- Tiny gold embroidery beads/dots -->
+      <g fill="#f1d9a9" opacity="0.78">
+        <circle cx="136" cy="40" r="1.4"/><circle cx="184" cy="40" r="1.4"/>
+        <circle cx="62" cy="94" r="1.3"/><circle cx="258" cy="94" r="1.3"/>
+        <circle cx="96" cy="144" r="1.3"/><circle cx="224" cy="144" r="1.3"/>
+        <circle cx="136" cy="206" r="1.4"/><circle cx="184" cy="206" r="1.4"/>
+        <circle cx="134" cy="236" r="1.4"/><circle cx="186" cy="236" r="1.4"/>
+        <circle cx="96" cy="296" r="1.3"/><circle cx="224" cy="296" r="1.3"/>
+        <circle cx="60" cy="346" r="1.3"/><circle cx="260" cy="346" r="1.3"/>
+        <circle cx="138" cy="404" r="1.4"/><circle cx="182" cy="404" r="1.4"/>
+      </g>
+    </g>
+  </defs>
+  <use href="#arch-vine" opacity="0.92"/>
+</svg>
